@@ -3,8 +3,23 @@ import { ImageBackground, SafeAreaView, StyleSheet, Text, View } from 'react-nat
 import Colors from './constants/Colors';
 import StartGameScreen from './screens/StartGameScreen';
 import { LinearGradient } from 'expo-linear-gradient';
+import { useState } from 'react';
+import GameScreen from './screens/GameScreen';
 
 export default function App() {
+
+  const [userNumber, setUserNumber] = useState();
+
+  function pickedNumberHander(pickedNumber) {
+    setUserNumber(pickedNumber);
+  }
+
+  let screen = <StartGameScreen onPickNumber={pickedNumberHander} />;
+
+  if(userNumber) {
+    screen = <GameScreen />;
+  }
+
   return (
     <LinearGradient colors={[Colors.primary600, Colors.accent500]} style={styles.rootContainer}>
       <ImageBackground 
@@ -13,7 +28,7 @@ export default function App() {
       style={styles.rootContainer}
       imageStyle={styles.backgroundImg}
       >
-        <StartGameScreen />
+        {screen}
       </ImageBackground>
     </LinearGradient>
   );
