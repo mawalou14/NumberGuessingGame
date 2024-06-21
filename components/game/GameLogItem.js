@@ -4,7 +4,7 @@ import Colors from "../../constants/Colors";
 function GameLogItem({roundNumber, guess}) {
     return <View style={styles.listItem}>
         <Text style={styles.itemText}>#{roundNumber}</Text>
-        <Text style={styles.itemText}>Oponent's Guess{guess}</Text>
+        <Text style={styles.itemText}>Oponent's Guess: {guess}</Text>
     </View>
 }
 
