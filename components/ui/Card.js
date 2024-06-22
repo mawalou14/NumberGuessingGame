@@ -1,11 +1,16 @@
-import { StyleSheet, View } from "react-native";
+import { Dimensions, StyleSheet, View, useWindowDimensions } from "react-native";
 import Colors from "../../constants/Colors";
 
 function Card({ children }) {
-    return <View style={styles.card} >{children}</View>
+    const {width, height} = useWindowDimensions();
+
+    const marginTopDistance = height < 380 ? 5 : 36;
+
+    return <View style={[styles.card, {marginTop: marginTopDistance}]} >{children}</View>
 }
 
 export default Card;
+
 
 const styles = StyleSheet.create({
     card: {
@@ -13,7 +18,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         marginTop: 36,
         marginHorizontal: 16,
-        padding: 15,
+        padding: 5,
         backgroundColor: Colors.primary800,
         borderRadius: 10,
         elevation: 15, // for android shadow
