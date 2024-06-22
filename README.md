@@ -37,3 +37,43 @@ To run this project, follow these steps:
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/your-username/number-guessing-game.git
+
+2. **Navigate to the project directory:**:
+   ```bash
+   cd number-guessing-game
+
+3. **Install the dependencies:**:
+   ```bash
+   npm install
+
+4. **Start the development server:**:
+   ```bash
+   npm start
+
+## Usage
+
+1. Open the app.
+2. Enter a number and confirm.
+3. Use the plus and minus buttons to give hints to the phone.
+4. Watch the phone guess your number.
+5. View the summary screen once the correct guess is made.
+6. Restart the game if desired.
+
+## Screenshots
+Bellow are the screens of the application:
+
+## Start Game Screen
+![startGameScreen](https://github.com/mawalou14/NumberGuessingGame/assets/97563838/7cec95c0-59d0-485b-8bbe-9d5cb784a221)
+
+
+## Game Screen
+![GameScreen](https://github.com/mawalou14/NumberGuessingGame/assets/97563838/2783b0ac-2f11-4152-a6ce-d329a4951bfd)
+
+
+## Game Over Screen
+![GameOverScreen](https://github.com/mawalou14/NumberGuessingGame/assets/97563838/925c6234-84fe-4db6-b441-569c896b56c0)
+
+
+## Contributing
+Contributions are welcome! If you have any suggestions or find any bugs, please open an issue or submit a pull request.
+
