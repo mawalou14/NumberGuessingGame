@@ -8,11 +8,12 @@ This app is a beginner's project and my first React Native project following a t
 
 - **[Functionalities](#functionalities)**
 - **[Technology](#technology)**
+- **[Fonts](#fonts)**
+- **[Orientations](#orientations)**
 - **[Setup](#setup)**
 - **[Usage](#usage)**
 - **[Screenshots](#screenshots)**
 - **[Contributing](#contributing)**
-- **[License](#license)**
 
 ## Functionalities
 
@@ -29,6 +30,13 @@ This application is built using the following technologies:
 - **React Native**: For building the mobile app.
 - **Expo**: For development and building the project.
 - **React Navigation**: For navigating between screens.
+
+## Fonts
+- **Open Sans Regular**: Used throughout the app for regular text.
+- **Open Sans Bold**: Used for headings and important text.
+
+## Orientations
+The application supports both landscape and portrait orientations, ensuring a flexible and user-friendly experience on different devices.
 
 ## Setup
 
