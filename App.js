@@ -9,6 +9,7 @@ import { useEffect, useState } from 'react';
 import GameScreen from './screens/GameScreen';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import GameOverScreen from './screens/GameOverscreen';
+import { StatusBar } from 'expo-status-bar';
 
 // Prevent the splash screen from auto-hiding
 SplashScreen.preventAutoHideAsync();
@@ -65,6 +66,8 @@ export default function App() {
   }
 
   return (
+    <>
+    <StatusBar style='dark' />
     <LinearGradient colors={[Colors.primary600, Colors.accent500]} style={styles.rootContainer}>
       <ImageBackground 
       source={require('./assets/images/bg.jpg')} 
@@ -77,6 +80,7 @@ export default function App() {
         </SafeAreaView>
       </ImageBackground>
     </LinearGradient>
+    </>
   );
 }
 
