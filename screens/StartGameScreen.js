@@ -1,4 +1,4 @@
-import { Alert, Dimensions, StyleSheet, Text, TextInput, View, useWindowDimensions } from "react-native";
+import { Alert, Dimensions, StyleSheet, TextInput, View, useWindowDimensions } from "react-native";
 import PrimaryButton from "../components/ui/ButtonPrimary";
 import Colors from "../constants/Colors";
 import { useState } from "react";

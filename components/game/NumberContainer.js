@@ -1,9 +1,9 @@
-import { StyleSheet, Text, View, Dimensions, useWindowDimensions } from "react-native";
+import { StyleSheet, Text, View, useWindowDimensions } from "react-native";
 import Colors from "../../constants/Colors";
 
 
 function NumberContainer({ children }) {
-    const {width, height} = useWindowDimensions();
+    const { height} = useWindowDimensions();
 
     const margin = height < 380 ? 10 : 24;
     const padding = height < 380 ? 10 : 24;
@@ -33,6 +33,5 @@ const styles = StyleSheet.create({
         fontFamily: 'open-sans-bold',
         color: Colors.accent500,
         fontSize: 36,
-        // fontWeight: 'bold',
     }
 })

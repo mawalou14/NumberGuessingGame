@@ -1,4 +1,4 @@
-import { ImageBackground, StyleSheet, Text, View } from 'react-native';
+import { ImageBackground, StyleSheet } from 'react-native';
 import Colors from './constants/Colors';
 import * as SplashScreen from 'expo-splash-screen';
 import { useFonts } from 'expo-font';
@@ -28,7 +28,6 @@ export default function App() {
   useEffect(() => {
     async function prepare() {
       if (fontsLoaded) {
-        // Hide the splash screen once fonts are loaded
         await SplashScreen.hideAsync();
       }
     }
@@ -37,7 +36,7 @@ export default function App() {
   }, [fontsLoaded]);
 
   if (!fontsLoaded) {
-    return null; // Render nothing while fonts are loading
+    return null;
   }
 
   function pickedNumberHander(pickedNumber) {

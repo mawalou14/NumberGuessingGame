@@ -1,4 +1,4 @@
-import { Alert, FlatList, StyleSheet, Text, View, useWindowDimensions } from "react-native";
+import { Alert, FlatList, StyleSheet, View, useWindowDimensions } from "react-native";
 import Title from "../components/ui/Title";
 import { useEffect, useState } from "react";
 import { Ionicons } from '@expo/vector-icons';

@@ -12,11 +12,9 @@ const styles = StyleSheet.create({
     title: {
         fontFamily: 'open-sans-bold',
         fontSize: 24,
-        // fontWeight: 'bold',
         color: Colors.white,
         textAlign: 'center',
         padding: 12,
-        // borderWidth: Platform.OS === 'android' ? 2 : 0,
         borderWidth: Platform.select({ios: 0, android: 2}),
         borderColor: Colors.white,
         maxWidth: '80%',
